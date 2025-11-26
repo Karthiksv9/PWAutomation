@@ -15,7 +15,8 @@ test.only('swaglabs', async ({ page }) => {
     await page.locator("#last-name").fill("From Sauce Labs");
     await page.getByPlaceholder('Zip/Postal Code').fill("5000");
     await page.locator('#continue').click();
-    await page.locator('#finish').click();
+    await page.locator('#finish').click(); // Automatically exits the application
+    console.log("Simple check-ot completed");
 }
 
 
