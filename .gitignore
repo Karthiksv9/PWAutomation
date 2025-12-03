@@ -8,3 +8,9 @@ playwright/.cache/
 .github/
 tests-examples/
 Basics.spec.js/
+
+# Playwright
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
