@@ -9,6 +9,9 @@ test.only('swaglabs', async ({ page }) => {
     await page.getByText('Sauce Labs Backpack').click();
     await page.locator("button#add-to-cart").click();
     await page.locator(".back").click();
+    await page.getByText('Sauce Labs Bike Light').click();
+    await page.locator('add-to-cart').click();
+    await page.locator(".back").click();
     await page.locator("a.shopping_cart_link").click();
     await page.locator("#checkout").click();
     await page.locator("#first-name").fill("Secret coder");
